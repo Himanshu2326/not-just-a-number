@@ -1,0 +1,293 @@
+#hook {
+  padding: 50px 0px;
+  background: #ffefdb;
+  position: relative;
+  z-index: 99;
+}
+
+.hook_details {
+  align-items: center;
+}
+
+.hook_text_final {
+  color: #8063a0;
+}
+
+.hook_details {
+  font-size: 23px;
+}
+
+.hook_text {
+  padding-left: 10px;
+}
+
+.calender-input {
+  background: transparent !important;
+  color: #fff !important;
+  color: #fff;
+  text-align: left;
+  width: 100%;
+  font-size: 17px;
+  background: 0 0;
+  border: 2px solid #fff !important;
+  border-radius: 50px !important;
+}
+
+
+
+
+.first-right {
+  text-align: center;
+  margin-top: -10px;
+}
+
+.first-right img {
+  width: 48%;
+  margin-bottom: 15px;
+}
+
+.first-right p {
+  color: #8063a0;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.first-right .contact {
+  color: #8063a0;
+  text-decoration: none;
+  font-size: 23.5px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.first-right .email-text {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.first-right .email {
+  font-size: 25px;
+  color: #8063a0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+  /* This will invert the color to white */
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: white;
+  /* Apply the white color */
+}
+
+/* Change text color inside the time input */
+input[type="time"] {
+  color: white;
+  /* Change text color */
+  background-color: transparent;
+  /* Make background transparent or match your design */
+  border: 1px solid white;
+  /* White border */
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+/* Style the time picker arrow (Chrome, Edge) */
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+  /* Inverts the color to white */
+  cursor: pointer;
+  /* Optional: change cursor to pointer */
+}
+
+/* Remove default time input buttons if needed */
+input[type="time"]::-webkit-clear-button,
+input[type="time"]::-webkit-inner-spin-button {
+  display: none;
+  /* Hides the spinner and clear button */
+}
+
+
+#included {
+  padding-top: 0px !important;
+}
+
+
+
+/* Add basic styles to inputs */
+input[type="date"],
+input[type="time"] {
+  width: 100%;
+  padding-right: 30px;
+  /* Space for the icon */
+  position: relative;
+}
+
+/* Add the down arrow icon after the input */
+input[type="date"]::after,
+input[type="time"]::after {
+  content: "\f078";
+  /* FontAwesome down arrow code */
+  font-family: 'FontAwesome';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  /* Prevent interaction with the icon */
+  font-size: 16px;
+  color: #888;
+  /* Adjust the icon color */
+  display: none;
+  /* Initially hidden */
+}
+
+/* Display the icon only on screens 768px or below */
+@media (max-width: 768px) {
+
+  input[type="date"]::after,
+  input[type="time"]::after {
+    display: block;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .include_details img {
+    width: fit-content !important;
+  }
+}
+
+
+
+
+/* Thank you page  */
+
+.wrapper-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-2 {
+  padding: 30px;
+  text-align: center;
+}
+
+.wrapper-2 h1 {
+  font-family: Nunito;
+  font-size: 4em;
+  letter-spacing: 3px;
+  color: #8063a0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+.wrapper-2 p {
+  margin: 0;
+  font-size: 24px;
+  color: #8063a0;
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  letter-spacing: 1px;
+}
+
+.go-home {
+  color: #fff;
+  background: #8063a0;
+  border: none;
+  padding: 10px 50px;
+  margin: 30px 0;
+  border-radius: 30px;
+  text-transform: capitalize;
+  /* box-shadow: 0 10px 16px 1px rgba(174, 199, 251, 1); */
+}
+
+.footer-like {
+  margin-top: auto;
+  background: #D7E6FE;
+  padding: 6px;
+  text-align: center;
+}
+
+.footer-like p {
+  margin: 0;
+  padding: 4px;
+  color: #5892FF;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 1px;
+}
+
+.footer-like p a {
+  text-decoration: none;
+  color: #5892FF;
+  font-weight: 600;
+}
+
+@media (min-width:360px) {
+  h1 {
+    font-size: 4.5em;
+  }
+
+  .go-home {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width:600px) {
+  .content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .wrapper-1 {
+    height: initial;
+    max-width: 920px;
+    margin: 0 auto;
+    /* margin-top: 50px; */
+    /* box-shadow: 4px 8px 40px 8px rgba(88, 146, 255, 0.2); */
+  }
+
+}
+
+
+
+
+#getreport .btn-get-started {
+  color: #8063A0 !important;
+}
+
+#submitBtn.btn-get-started:hover {
+  background: linear-gradient(to right, #8063a0 0, #47126b 100%) !important;
+  color: white !important;
+}
+
+
+.down-icon-animate{
+  display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    font-size: 40px;
+    color: #8063a0;
+    margin-bottom: 10px;
+
+}
+
+.down-icon-animate i {
+  animation: upDown 1.5s infinite ease-in-out, colorFade 1.5s infinite ease-in-out;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes upDown {
+  0%, 100% {
+    transform: translateY(0);
+}
+
+50% {
+    transform: translateY(-10px);
+}
+}
